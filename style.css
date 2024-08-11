@@ -1,0 +1,88 @@
+body {
+    font-family: 'Glacial Indifference', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.beginning {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.07fr 1fr;
+    height: 100vh;
+}
+
+.nav-bar {
+    background-color: black;
+    padding-left: 30px;
+    display: flex;
+    gap: 30px;
+    grid-column: span 2;
+    align-items: center;
+}
+
+.nav-item {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.introduction {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-name {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.my-description {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 860px) {
+
+    .nav-item {
+        font-size: 1.1rem;
+    }
+
+    .my-name {
+        font-size: 5rem;
+    }
+
+    .my-description {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .nav-item {
+        font-size: 1rem;
+    }
+
+    .my-name {
+        font-size: 4rem;
+    }
+
+    .my-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 570px) {
+    .nav-item {
+        font-size: 0.8rem;
+    }
+
+    .my-name {
+        font-size: 3.5rem;
+    }
+
+    .my-description {
+        font-size: 0.9rem;
+    }
+}
