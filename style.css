@@ -5,34 +5,12 @@ body {
     font-size: 16px;
 }
 
-.beginning {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.07fr 1fr;
-    height: 100vh;
-}
-
-.nav-bar {
-    background-color: black;
-    padding-left: 30px;
-    display: flex;
-    gap: 30px;
-    grid-column: span 2;
-    align-items: center;
-}
-
-.nav-item {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: white;
-}
-
 .introduction {
-    grid-column: span 2;
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .my-name {
@@ -44,11 +22,96 @@ body {
     font-size: 1.5rem;
 }
 
-@media (max-width: 860px) {
+.resume {
+    height: 100vh;
+}
 
-    .nav-item {
-        font-size: 1.1rem;
+.my-picture {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-picture img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.my-informations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.my-informations-subtitle {
+    font-size: 2rem;
+}
+
+ul, li, p {
+    font-size: 1.3rem;
+}
+
+.teste {
+    height: 50%;
+}
+
+.projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-title {
+    margin-top: 100px;
+    font-size: 6rem;
+}
+
+.projects-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#tindog-img, #mondrian-img, #agency-img {
+    width: 300px;
+    height: 307.75px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+    .my-informations {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
     }
+
+    .my-informations div {
+        width: 400px;
+    }
+
+    .projects {
+        margin-top: 670px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    #tindog-img, #mondrian-img, #agency-img {
+        width: 400px;
+        height: 307.75px;
+    }
+}
+
+@media (max-width: 860px) {
 
     .my-name {
         font-size: 5rem;
@@ -60,9 +123,6 @@ body {
 }
 
 @media (max-width: 720px) {
-    .nav-item {
-        font-size: 1rem;
-    }
 
     .my-name {
         font-size: 4rem;
@@ -74,15 +134,57 @@ body {
 }
 
 @media (max-width: 570px) {
-    .nav-item {
-        font-size: 0.8rem;
-    }
 
     .my-name {
         font-size: 3.5rem;
     }
 
     .my-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .my-name {
+        font-size: 3rem;
+    }
+
+    .my-description {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .my-name {
+        font-size: 2.5rem;
+    }
+
+    .my-description {
+        font-size: 0.8rem;
+    }
+
+    .my-informations div {
+        width: 300px;
+    }
+
+    .my-informations-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    ul, li, p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .my-name {
+        font-size: 2rem;
+    }
+
+    .my-description {
+        font-size: 0.8rem;
     }
 }
