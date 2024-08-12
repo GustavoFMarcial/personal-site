@@ -65,6 +65,7 @@ ul, li, p {
 
 .projects-title {
     margin-top: 100px;
+    margin-bottom: 100px;
     font-size: 6rem;
 }
 
@@ -81,6 +82,39 @@ ul, li, p {
 
 h3 {
     font-size: 1.5rem;
+}
+
+.about-me {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 200px;
+}
+
+#my-picture2 {
+    height: 700px;
+}
+
+ol li {
+    line-height: 100px;
+}
+
+.contact {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 300px;
+}
+
+.get-in-touch {
+    font-size: 6rem;
+}
+
+#man {
+    width: 200px;
 }
 
 @media (max-width: 1100px) {
@@ -109,6 +143,22 @@ h3 {
         width: 400px;
         height: 307.75px;
     }
+
+    .about-me {
+        margin-top: 1600px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        margin-top: 400px;
+    }
+
+    h3 {
+        font-size: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 860px) {
@@ -119,6 +169,20 @@ h3 {
 
     .my-description {
         font-size: 1.4rem;
+    }
+
+    .contact {
+        
+    }
+
+    .get-in-touch {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -153,6 +217,7 @@ h3 {
     .my-description {
         font-size: 0.9rem;
     }
+
 }
 
 @media (max-width: 430px) {
